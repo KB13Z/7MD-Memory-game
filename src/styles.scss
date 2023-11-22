@@ -1,0 +1,126 @@
+* {
+  background-color: beige;
+  color: blue;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.memory-game-wrapper {
+  display: flex;
+  border: 5px solid rgb(255, 174, 0);
+  border-radius: 20px;
+  height: 80vh;
+  width: 120vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  visibility: none;
+  position: absolute;
+  left: 53vh;
+  top: 12vh;
+  height: 7vh;
+  width: 17vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.move-counter {
+  visibility: none;
+  position: absolute;
+  left: 147vh;
+  top: 12vh;
+  height: 7vh;
+  width: 17vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-button {
+  display: flex;
+  border: 5px solid rgb(255, 174, 0);
+  border-radius: 15px;
+  height: 10vh;
+  width: 30vh;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.4s;
+  }
+}
+
+.memory-game {
+  display: none;
+  padding: 10vh 20vh;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+}
+
+.card {
+  display: flex;
+  width: 20vh;
+  height: 25vh;
+  border: 5px solid rgb(255, 174, 0);
+  border-radius: 15px;
+  background-color: antiquewhite;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+}
+
+.end-screen {
+  display: none;
+  flex-flow: column nowrap;
+  gap: 5vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.winner {
+  display: flex;
+  border: 5px solid rgb(255, 174, 0);
+  border-radius: 15px;
+  height: 10vh;
+  width: 30vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.reset-button {
+  display: flex;
+  border: 5px solid rgb(255, 174, 0);
+  border-radius: 15px;
+  height: 7vh;
+  width: 17vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+}
+
+
+
